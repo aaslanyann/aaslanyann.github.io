@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todoInput {
+    width: 1100px;
+    background-color: white;
 }
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 5px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.list {
+    width: 1200px;
+    height: 300px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.item > p {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    background-color: rgb(245,245,245);
+    padding: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(25,118,210);
+    border-radius: 10px;
+}
+
